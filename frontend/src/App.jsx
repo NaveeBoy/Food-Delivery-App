@@ -5,6 +5,7 @@ import Home from './pages/Home/Home'
 import Cart from './pages/Cart/Cart'
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 import Header from './components/Header/Header'
+import ExploreMenu from './components/ExploreMenu/ExploreMenu'
 
 
 const App = () => {
@@ -17,6 +18,8 @@ const App = () => {
       <Route path='/cart' element={<Cart/>}/>
       <Route path='/order' element={<PlaceOrder/>}/>
       <Route path='/header' element={<Header/>}/>
+      <Route path='/explore' element={<ExploreMenu/>}/>
+
       </Routes>
 
 
