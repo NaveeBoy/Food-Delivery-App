@@ -6,11 +6,13 @@ import Cart from './pages/Cart/Cart'
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 import Header from './components/Header/Header'
 import ExploreMenu from './components/ExploreMenu/ExploreMenu'
+import Footer from './components/Footer/Footer'
+
 
 
 const App = () => {
   return (
-    
+    <>
       <div className='app'>
       <Navbar/>
       <Routes>
@@ -19,12 +21,11 @@ const App = () => {
       <Route path='/order' element={<PlaceOrder/>}/>
       <Route path='/header' element={<Header/>}/>
       <Route path='/explore' element={<ExploreMenu/>}/>
-
+      <Route path='/footer' element={<Footer/>}/>
       </Routes>
-
-
-
       </div>
+      <Footer/>
+    </>
   )
 }
 
